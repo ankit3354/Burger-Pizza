@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f0eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 0 24px;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+.header_wrapper {
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.nav_list li + li {
+  margin-left: 60px;
+}
+
+.nav_list li {
+  list-style: none;
+}
+
+.nav_list li a {
+  font-size: 20px;
+  color: #492118;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.hero_section {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.img-section {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.hero_section p {
+  font-size: 24px;
+  color: #492118;
+  line-height: 29.4px;
+  text-align: center;
+}
+
+.img_container {
+  margin: 0 auto;
+  max-width: 960px;
+  margin-top: 80px;
+}
+
+.img_container img {
+  width: 100%;
+}
+
+.img_container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #492118;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.gobtn {
+  text-align: right;
+  margin: 0 auto;
+  max-width: 960px;
+  margin-top: 80px;
+}
+.gobtn a {
+  font-size: 32px;
+  font-weight: 700;
+  color: #492118;
+  text-decoration-line: underline;
+}
+
+.copyright {
+  font-size: 24px;
+  font-weight: 500;
+  color: #858585;
+  text-align: center;
+  margin-block: 64px;
+}
+
+.close_icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  display: none;
+}
+
+.Humburger_container {
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  position: relative;
+
+  display: none;
+}
+
+.Humburger {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 16px;
+  width: 200px;
+  height: 200px;
+  top: -125px;
+  cursor: pointer;
+}
+
+.Humburger_icon {
+  position: absolute;
+  bottom: 30px;
+  left: 36px;
+  color: black;
+  font-size: 22px;
+}
+
+@media (max-width: 1200px) {
+  .nav_list li a {
+    font-size: 16px;
+  }
+
+  .nav_list li + li {
+    margin-left: 48px;
+  }
+
+  header {
+    background-color: #ffffff;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    background-color: #f6f0ebac;
+    position: sticky;
+    backdrop-filter: blur(4px);
+    top: 0;
+  }
+
+  .img_Logo {
+    width: 46px;
+  }
+  .nav_list li a {
+    font-size: 12px;
+  }
+
+  .nav_list li + li {
+    margin-left: 32px;
+  }
+  .hero_section {
+    margin-top: 32px;
+  }
+  .img_container {
+    margin-top: 28px;
+  }
+  .hero_section p {
+    font-size: 10px;
+  }
+  .img_container h1 {
+    font-size: 14px;
+  }
+
+  .gobtn {
+    padding-right: 24px;
+    margin-top: 36px;
+  }
+  .gobtn a {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 10px;
+    margin-block: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .Humburger_container {
+    width: 54px;
+    height: 54px;
+  }
+
+  .Humburger {
+    width: 140px;
+    height: 140px;
+    top: -86px;
+    border-radius: 44%;
+  }
+  .Humburger_icon {
+    bottom: 18px;
+    left: 25px;
+  }
+
+  header {
+    padding: 8px 24px;
+  }
+
+  .navbar {
+    min-height: 64px;
+  }
+
+  .nav_list {
+    position: absolute;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 100%, 0.879);
+    padding: 24px;
+    right: -200px;
+    top: 16px;
+    z-index: 1;
+    transition: right 0.35s ease-in-out;
+    /* display: none; */
+  }
+
+  .nav_list li a {
+    font-size: 12px;
+  }
+
+  .nav_list li + li {
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  .img_Logo {
+    width: 36px;
+  }
+
+  .Humburger_container {
+    display: block;
+  }
+
+  .close_icon {
+    display: block;
+  }
+
+  .menu_open .nav_list {
+    /* display: flex; */
+    right: 24px;
+  }
+
+  .menu_open .Humburger_container {
+    display: none;
+  }
+}
